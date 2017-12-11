@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5918E13-9DCC-4C90-BF63-B9389CBEA562}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CPMS.Patient.Manager</RootNamespace>
+    <AssemblyName>CPMS.Patient.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <OutputPath>bin\QA\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BreachFilterInputInfo.cs" />
+    <Compile Include="BreachInputInfo.cs" />
+    <Compile Include="ClinicianInfo.cs" />
+    <Compile Include="EventBreachInfo.cs" />
+    <Compile Include="EventBreachesInfo.cs" />
+    <Compile Include="EventCounterInfo.cs" />
+    <Compile Include="EventHistoryLogFilterInputInfo.cs" />
+    <Compile Include="EventHistoryLogInfo.cs" />
+    <Compile Include="EventHistoryLogInputInfo.cs" />
+    <Compile Include="EventsBreachesCountInfo.cs" />
+    <Compile Include="EventsHistoryLogInfo.cs" />
+    <Compile Include="GroupBy.cs" />
+    <Compile Include="HospitalInfo.cs" />
+    <Compile Include="IMapper.cs" />
+    <Compile Include="ListInputInfo.cs" />
+    <Compile Include="LiteEventBreachInfo.cs" />
+    <Compile Include="PathwayInfo.cs" />
+    <Compile Include="PatientApplicationService.cs" />
+    <Compile Include="PatientAuthorizationFilter.cs" />
+    <Compile Include="PatientInfo.cs" />
+    <Compile Include="PatientFilterInputInfo.cs" />
+    <Compile Include="PatientsInfo.cs" />
+    <Compile Include="PatientInputInfo.cs" />
+    <Compile Include="PeriodBreachInfo.cs" />
+    <Compile Include="PeriodCounterInfo.cs" />
+    <Compile Include="PeriodEventInfo.cs" />
+    <Compile Include="PeriodEventsFilterInputInfo.cs" />
+    <Compile Include="PeriodEventsInfo.cs" />
+    <Compile Include="PeriodEventsInputInfo.cs" />
+    <Compile Include="PeriodInfo.cs" />
+    <Compile Include="PeriodBreachesInfo.cs" />
+    <Compile Include="PeriodsAndEventsBreachesCountInfo.cs" />
+    <Compile Include="PeriodsBreachesCountInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecialtyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Authorization\CPMS.Authorization\CPMS.Authorization\CPMS.Authorization.csproj">
+      <Project>{49427da9-6067-4cd9-b50f-45cdba7db428}</Project>
+      <Name>CPMS.Authorization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CPMS.Patient.Domain\CPMS.Patient.Domain.csproj">
+      <Project>{029fcc94-02d3-48d7-af63-bf50c1726edf}</Project>
+      <Name>CPMS.Patient.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

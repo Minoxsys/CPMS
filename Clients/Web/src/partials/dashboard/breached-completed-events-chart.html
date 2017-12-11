@@ -1,0 +1,38 @@
+<div class="breached-events-chart content-section">
+	<div class="content-section-header">
+		<div class="section-header-left">
+			Performance Completed Events &nbsp;-&nbsp; Past 12 months<span class="icon icon-dashboard-widget-info" title="Shows a brief summary of the chart."></span>
+		</div>
+		<div class="section-header-right">
+			<fullscreen></fullscreen>
+		</div>
+	</div>
+
+	<div class="content-section-body">
+		<div class="chart-legend-outer">
+			<div class="chart-legend">
+				<div class="chart-legend-item-left">
+					<span class="chart-legend-bar about-to-breach"></span>
+				</div>
+				<div class="chart-legend-item-right">
+					Post Milestone
+				</div>
+				<div class="chart-legend-item-left">
+					<span class="chart-legend-bar breached"></span>
+				</div>
+				<div class="chart-legend-item-right">
+					Total
+				</div>
+			</div>
+		</div>
+		<div class="chart-container loading">
+			<div class="chart-column-left">
+				<div class="chart-cell" ng-repeat="item in bceChart.getItems()">
+					<div class="chart-cell-inner">{{item.name}}</div>
+				</div>
+			</div>
+			<div class="chart-column-right">
+			</div>
+		</div>
+	</div>
+</div>

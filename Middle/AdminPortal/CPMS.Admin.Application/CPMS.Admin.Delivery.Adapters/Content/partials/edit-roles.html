@@ -1,0 +1,19 @@
+﻿<div class="container edit-RolesPermissionsMapping">
+    <table>
+        <thead>
+            <th></th>
+            <th ng-repeat="role in editRolesPermissionsMapping.data.Roles">{{role.Name}}</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="permission in editRolesPermissionsMapping.data.Permissions">
+            <td id="header">{{permission.Name}}</td>
+            <td ng-repeat="role in editRolesPermissionsMapping.data.Roles">
+                <input ng-model="editRolesPermissionsMapping.rolesPermissionsMapping[role.Id][permission.Id]" type="checkbox" />
+            </td>
+            <tr />
+        </tbody>
+    </table>
+    <br />
+    <button class="btn btn-default" ng-click="editRolesPermissionsMapping.submit()">Save</button>
+</div>
+

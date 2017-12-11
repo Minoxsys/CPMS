@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Edit Roles-Permissions Mapping";
+}
+
+<h2>Edit Roles-Permissions Mapping</h2>
+
+<style type="text/css">
+    .edit-RolesPermissionsMapping th {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .edit-RolesPermissionsMapping td {
+        width: 110px;
+        height: 50px;
+        border: 1px solid grey;
+        text-align: center;
+    }
+
+    #header {
+        border: none;
+        font-weight: bold;
+    }
+
+    .edit-RolesPermissionsMapping .submit {
+        margin-top: 10px;
+    }
+
+    .hover {
+        background-color: #eee;
+    }
+</style>
+
+
+<input type="hidden" id="editRoles" name="editRoles" value="~/Content/partials/edit-roles.html" />
+
+<edit-roles ng-controller="EditRolesPermissionsMappingController as editRolesPermissionsMapping"></edit-roles>
+
+    @Html.Hidden("EditRolesPermissionsMappingUrl", Url.Action("Edit"))
+
+    @section scripts
+{
+        @Scripts.Render("~/bundles/angular")
+        @Scripts.Render("~/Scripts/editRolesPermissionsMapping.js")
+        @Scripts.Render("~/Scripts/editRoles.js")
+    }

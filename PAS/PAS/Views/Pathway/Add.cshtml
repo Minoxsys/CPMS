@@ -1,0 +1,85 @@
+﻿@using CPMS.Patient.Domain
+@using PAS.HelperExtensions
+@model PAS.Models.AddPathwayViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#pathway-table').dataTable();
+        });
+    </script>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Add New Pathway</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.Label("PPI Number", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.PPINumber)
+                @Html.ValidationMessageFor(model => model.PPINumber)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Type", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @(Html.DropDownListForEnum<PathwayType>("Type", "Select Type"))
+                @Html.ValidationMessage("Type", "Selecting a pathway type is required.")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Patient", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SelectedPatientNHSNumber", new SelectList(Model.Patients, "NHSNumber", "DisplayName"), "Select Patient")
+                @Html.ValidationMessage("SelectedPatientNHSNumber", "Selecting a patient is required.")
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.Label("Organization Code", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.OrganizationCode)
+                @Html.ValidationMessageFor(model => model.OrganizationCode)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<table id="pathway-table" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>PPI Number</th>
+            <th>Type</th>
+            <th>Patient NHS Number</th>
+            <th>Organization Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pathway in Model.AllPathways)
+        {
+            <tr>
+                <td>@pathway.PPINumber</td>
+                <td>@pathway.Type.GetDescription()</td>
+                <td>@pathway.NHSNumber</td>
+                <td>@pathway.OrganizationCode</td>
+            </tr>
+        }
+    </tbody>
+</table>
