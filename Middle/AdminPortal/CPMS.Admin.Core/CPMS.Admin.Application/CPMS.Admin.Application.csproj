@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD8DE916-896F-40FA-B5AE-E28BD00FD12B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CPMS.Admin.Application</RootNamespace>
+    <AssemblyName>CPMS.Admin.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <OutputPath>bin\QA\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDestinationRepository.cs" />
+    <Compile Include="IEventNameRepository.cs" />
+    <Compile Include="IPermissionRepository.cs" />
+    <Compile Include="IRoleRepository.cs" />
+    <Compile Include="ISourceRepository.cs" />
+    <Compile Include="IUserRepository.cs" />
+    <Compile Include="ListInputInfo.cs" />
+    <Compile Include="OrderBy.cs" />
+    <Compile Include="OrderDirection.cs" />
+    <Compile Include="EventMilestoneFilterInputInfo.cs" />
+    <Compile Include="EventMilestoneInfo.cs" />
+    <Compile Include="EventMilestoneInputInfo.cs" />
+    <Compile Include="UserInputInfo.cs" />
+    <Compile Include="RolesPermissionsMappingInfo.cs" />
+    <Compile Include="IMapper.cs" />
+    <Compile Include="RolePermissionsInfo.cs" />
+    <Compile Include="AdminApplicationService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Authorization\CPMS.Authorization\CPMS.Authorization\CPMS.Authorization.csproj">
+      <Project>{49427da9-6067-4cd9-b50f-45cdba7db428}</Project>
+      <Name>CPMS.Authorization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Configuration\CPMS.Configuration\CPMS.Configuration.csproj">
+      <Project>{f6edf3bd-5b5f-4f1c-b4c1-e1993d80090a}</Project>
+      <Name>CPMS.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\CPMS.Domain\CPMS.Domain\CPMS.Domain.csproj">
+      <Project>{029FCC94-02D3-48D7-AF63-BF50C1726EDF}</Project>
+      <Name>CPMS.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

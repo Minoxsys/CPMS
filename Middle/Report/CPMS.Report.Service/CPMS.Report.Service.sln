@@ -1,0 +1,171 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Report.Core.Adapters", "CPMS.Report.Core.Adapters\CPMS.Report.Core.Adapters.csproj", "{D04BC119-FF52-499C-8E96-CF4367C056DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{AA805B85-E726-4CD7-9A6A-6011D9156B6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{15BB6522-91C1-45CC-ABCE-700A85D074D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B687126D-F3EE-4E06-B625-3D35575D6FEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7E97875F-A3AB-4C50-9AD9-D08EED3E4C04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A282F802-F1AD-4B9C-A80F-11E2C9644BD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5328E348-2CBA-4385-9029-536D5736D4D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Report.Manager", "..\CPMS.Report.Core\CPMS.Report.Manager\CPMS.Report.Manager.csproj", "{DA07A338-FFD1-401C-9B54-50A8E1BE4F94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Report.Presentation", "..\CPMS.Report.Core\CPMS.Report.Presentation\CPMS.Report.Presentation.csproj", "{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Report.Delivery.Adapters", "CPMS.Report.Delivery.Adapters\CPMS.Report.Delivery.Adapters.csproj", "{A707EB3C-B1C6-4F07-8AB3-3D6068804A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Report.Rendering.Adapters", "CPMS.Report.Rendering.Adapters\CPMS.Report.Rendering.Adapters.csproj", "{5E26AC87-05F5-4346-8F8A-62DC68987910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Domain", "..\..\Common\CPMS.Domain\CPMS.Domain\CPMS.Domain.csproj", "{029FCC94-02D3-48D7-AF63-BF50C1726EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Domain.Tests", "..\..\Common\CPMS.Domain\CPMS.Domain.Tests\CPMS.Domain.Tests.csproj", "{5BDCB7AD-8C9C-4710-885E-243D1D383013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization", "..\..\Common\Authorization\CPMS.Authorization\CPMS.Authorization\CPMS.Authorization.csproj", "{49427DA9-6067-4CD9-B50F-45CDBA7DB428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization.WebAPI", "..\..\Common\Authorization\CPMS.Authorization\CPMS.Authorization.WebAPI\CPMS.Authorization.WebAPI.csproj", "{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Infrastructure.WebApi", "..\..\Common\Infrastructure\CPMS.Infrastructure.WebApi\CPMS.Infrastructure.WebApi.csproj", "{085C3D34-084D-4F48-A985-BABF30632355}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.22.4.249:8080/tfs/minoxsys
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CPMS.Report.Core.Adapters\\CPMS.Report.Core.Adapters.csproj
+		SccProjectTopLevelParentUniqueName1 = CPMS.Report.Service.sln
+		SccProjectName1 = CPMS.Report.Core.Adapters
+		SccLocalPath1 = CPMS.Report.Core.Adapters
+		SccProjectUniqueName2 = ..\\CPMS.Report.Core\\CPMS.Report.Manager\\CPMS.Report.Manager.csproj
+		SccProjectTopLevelParentUniqueName2 = CPMS.Report.Service.sln
+		SccProjectName2 = ../CPMS.Report.Core/CPMS.Report.Manager
+		SccLocalPath2 = ..\\CPMS.Report.Core\\CPMS.Report.Manager
+		SccProjectUniqueName3 = ..\\CPMS.Report.Core\\CPMS.Report.Presentation\\CPMS.Report.Presentation.csproj
+		SccProjectTopLevelParentUniqueName3 = CPMS.Report.Service.sln
+		SccProjectName3 = ../CPMS.Report.Core/CPMS.Report.Presentation
+		SccLocalPath3 = ..\\CPMS.Report.Core\\CPMS.Report.Presentation
+		SccProjectUniqueName4 = CPMS.Report.Delivery.Adapters\\CPMS.Report.Delivery.Adapters.csproj
+		SccProjectTopLevelParentUniqueName4 = CPMS.Report.Service.sln
+		SccProjectName4 = CPMS.Report.Delivery.Adapters
+		SccLocalPath4 = CPMS.Report.Delivery.Adapters
+		SccProjectUniqueName5 = CPMS.Report.Rendering.Adapters\\CPMS.Report.Rendering.Adapters.csproj
+		SccProjectTopLevelParentUniqueName5 = CPMS.Report.Service.sln
+		SccProjectName5 = CPMS.Report.Rendering.Adapters
+		SccLocalPath5 = CPMS.Report.Rendering.Adapters
+		SccProjectUniqueName6 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain\\CPMS.Domain.csproj
+		SccProjectTopLevelParentUniqueName6 = CPMS.Report.Service.sln
+		SccProjectName6 = ../../Common/CPMS.Domain/CPMS.Domain
+		SccLocalPath6 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain
+		SccProjectUniqueName7 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain.Tests\\CPMS.Domain.Tests.csproj
+		SccProjectTopLevelParentUniqueName7 = CPMS.Report.Service.sln
+		SccProjectName7 = ../../Common/CPMS.Domain/CPMS.Domain.Tests
+		SccLocalPath7 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain.Tests
+		SccProjectUniqueName8 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization\\CPMS.Authorization.csproj
+		SccProjectTopLevelParentUniqueName8 = CPMS.Report.Service.sln
+		SccProjectName8 = ../../Common/Authorization/CPMS.Authorization/CPMS.Authorization
+		SccLocalPath8 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization
+		SccProjectUniqueName9 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization.WebAPI\\CPMS.Authorization.WebAPI.csproj
+		SccProjectTopLevelParentUniqueName9 = CPMS.Report.Service.sln
+		SccProjectName9 = ../../Common/Authorization/CPMS.Authorization/CPMS.Authorization.WebAPI
+		SccLocalPath9 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization.WebAPI
+		SccProjectUniqueName10 = ..\\..\\Common\\Infrastructure\\CPMS.Infrastructure.WebApi\\CPMS.Infrastructure.WebApi.csproj
+		SccProjectTopLevelParentUniqueName10 = CPMS.Report.Service.sln
+		SccProjectName10 = ../../Common/Infrastructure/CPMS.Infrastructure.WebApi
+		SccLocalPath10 = ..\\..\\Common\\Infrastructure\\CPMS.Infrastructure.WebApi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D04BC119-FF52-499C-8E96-CF4367C056DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04BC119-FF52-499C-8E96-CF4367C056DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04BC119-FF52-499C-8E96-CF4367C056DD}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{D04BC119-FF52-499C-8E96-CF4367C056DD}.QA|Any CPU.Build.0 = QA|Any CPU
+		{D04BC119-FF52-499C-8E96-CF4367C056DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04BC119-FF52-499C-8E96-CF4367C056DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA07A338-FFD1-401C-9B54-50A8E1BE4F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA07A338-FFD1-401C-9B54-50A8E1BE4F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA07A338-FFD1-401C-9B54-50A8E1BE4F94}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{DA07A338-FFD1-401C-9B54-50A8E1BE4F94}.QA|Any CPU.Build.0 = QA|Any CPU
+		{DA07A338-FFD1-401C-9B54-50A8E1BE4F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA07A338-FFD1-401C-9B54-50A8E1BE4F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A}.QA|Any CPU.Build.0 = QA|Any CPU
+		{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A707EB3C-B1C6-4F07-8AB3-3D6068804A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A707EB3C-B1C6-4F07-8AB3-3D6068804A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A707EB3C-B1C6-4F07-8AB3-3D6068804A56}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{A707EB3C-B1C6-4F07-8AB3-3D6068804A56}.QA|Any CPU.Build.0 = QA|Any CPU
+		{A707EB3C-B1C6-4F07-8AB3-3D6068804A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A707EB3C-B1C6-4F07-8AB3-3D6068804A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E26AC87-05F5-4346-8F8A-62DC68987910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E26AC87-05F5-4346-8F8A-62DC68987910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E26AC87-05F5-4346-8F8A-62DC68987910}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{5E26AC87-05F5-4346-8F8A-62DC68987910}.QA|Any CPU.Build.0 = QA|Any CPU
+		{5E26AC87-05F5-4346-8F8A-62DC68987910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E26AC87-05F5-4346-8F8A-62DC68987910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.Build.0 = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.Build.0 = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.Build.0 = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.QA|Any CPU.Build.0 = QA|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.QA|Any CPU.Build.0 = QA|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D04BC119-FF52-499C-8E96-CF4367C056DD} = {AA805B85-E726-4CD7-9A6A-6011D9156B6A}
+		{A707EB3C-B1C6-4F07-8AB3-3D6068804A56} = {AA805B85-E726-4CD7-9A6A-6011D9156B6A}
+		{5E26AC87-05F5-4346-8F8A-62DC68987910} = {AA805B85-E726-4CD7-9A6A-6011D9156B6A}
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435} = {AA805B85-E726-4CD7-9A6A-6011D9156B6A}
+		{085C3D34-084D-4F48-A985-BABF30632355} = {AA805B85-E726-4CD7-9A6A-6011D9156B6A}
+		{B687126D-F3EE-4E06-B625-3D35575D6FEC} = {15BB6522-91C1-45CC-ABCE-700A85D074D0}
+		{7E97875F-A3AB-4C50-9AD9-D08EED3E4C04} = {15BB6522-91C1-45CC-ABCE-700A85D074D0}
+		{A282F802-F1AD-4B9C-A80F-11E2C9644BD4} = {15BB6522-91C1-45CC-ABCE-700A85D074D0}
+		{5328E348-2CBA-4385-9029-536D5736D4D1} = {15BB6522-91C1-45CC-ABCE-700A85D074D0}
+		{DA07A338-FFD1-401C-9B54-50A8E1BE4F94} = {B687126D-F3EE-4E06-B625-3D35575D6FEC}
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428} = {B687126D-F3EE-4E06-B625-3D35575D6FEC}
+		{093CB94F-9DE1-4629-A3ED-2B0FBE2FD07A} = {7E97875F-A3AB-4C50-9AD9-D08EED3E4C04}
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF} = {A282F802-F1AD-4B9C-A80F-11E2C9644BD4}
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013} = {5328E348-2CBA-4385-9029-536D5736D4D1}
+	EndGlobalSection
+EndGlobal

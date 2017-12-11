@@ -1,0 +1,103 @@
+﻿@using System.Web.Mvc.Html
+@using PAS.HelperExtensions
+@model PAS.Models.AddPatientViewModel
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/add-patient.js")
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Add New Patient</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.RadioButtonListFor(model => model.Title)
+                @Html.ValidationMessageFor(model => model.Title)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateOfBirth, "Date Of Birth", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.DateOfBirth, new { @id = "datepicker", @class = "inputDatePicker" })
+                @Html.ValidationMessageFor(model => model.DateOfBirth)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NHSNumber, "Nhs Number", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NHSNumber)
+                @Html.ValidationMessageFor(model => model.NHSNumber)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ConsultantName, "Consultant Name", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ConsultantName)
+                @Html.ValidationMessageFor(model => model.ConsultantName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ConsultantNumber, "Consultant Number", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ConsultantNumber)
+                @Html.ValidationMessageFor(model => model.ConsultantNumber)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<table id="patientsTable" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Name</th>
+            <th>Date Of Birth</th>
+            <th>Nhs Number</th>
+            <th>Consultant Name</th>
+            <th>Consultant Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var patient in Model.AllPatients)
+        {
+            <tr>
+                <td>@patient.Title</td>
+                <td>@patient.Name</td>
+                <td>@patient.DateOfBirth</td>
+                <td>@patient.NHSNumber</td>
+                <td>@patient.ConsultantName</td>
+                <td>@patient.ConsultantNumber</td>
+            </tr>
+        }
+    </tbody>
+</table>

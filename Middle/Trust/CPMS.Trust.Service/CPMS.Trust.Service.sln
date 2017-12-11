@@ -1,0 +1,158 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Trust.Core.Adapters", "CPMS.Trust.Core.Adapters\CPMS.Trust.Core.Adapters.csproj", "{125A3E3A-6870-4E4A-8259-9F80462B354A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{AA605476-B9BA-4674-8090-89DACA55CDA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7688A57C-EA43-4C30-9A5D-C5E2F42074E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FA4F0FFA-E43C-44AB-947D-D9DA2D023C3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{EF50580C-EEDD-4662-9E77-1DEABEDC3C80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8CD085EA-DFF8-4465-8FDE-D9FCB89EF95C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{862CDF25-6361-408E-928C-008719B9EC27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Trust.Manager", "..\CPMS.Trust.Core\CPMS.Trust.Manager\CPMS.Trust.Manager.csproj", "{42C88468-75A2-473B-8F87-D558685BC102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization", "..\..\Common\Authorization\CPMS.Authorization\CPMS.Authorization\CPMS.Authorization.csproj", "{49427DA9-6067-4CD9-B50F-45CDBA7DB428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Domain", "..\..\Common\CPMS.Domain\CPMS.Domain\CPMS.Domain.csproj", "{029FCC94-02D3-48D7-AF63-BF50C1726EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Trust.Presentation", "..\CPMS.Trust.Core\CPMS.Trust.Presentation\CPMS.Trust.Presentation.csproj", "{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Domain.Tests", "..\..\Common\CPMS.Domain\CPMS.Domain.Tests\CPMS.Domain.Tests.csproj", "{5BDCB7AD-8C9C-4710-885E-243D1D383013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization.WebAPI", "..\..\Common\Authorization\CPMS.Authorization\CPMS.Authorization.WebAPI\CPMS.Authorization.WebAPI.csproj", "{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Infrastructure.WebApi", "..\..\Common\Infrastructure\CPMS.Infrastructure.WebApi\CPMS.Infrastructure.WebApi.csproj", "{085C3D34-084D-4F48-A985-BABF30632355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Trust.Delivery.Adapters", "CPMS.Trust.Delivery.Adapters\CPMS.Trust.Delivery.Adapters.csproj", "{0D030C42-3E51-4670-8B6F-D8006F43EE00}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.22.4.249:8080/tfs/minoxsys
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CPMS.Trust.Core.Adapters\\CPMS.Trust.Core.Adapters.csproj
+		SccProjectTopLevelParentUniqueName1 = CPMS.Trust.Service.sln
+		SccProjectName1 = CPMS.Trust.Core.Adapters
+		SccLocalPath1 = CPMS.Trust.Core.Adapters
+		SccProjectUniqueName2 = ..\\CPMS.Trust.Core\\CPMS.Trust.Manager\\CPMS.Trust.Manager.csproj
+		SccProjectTopLevelParentUniqueName2 = CPMS.Trust.Service.sln
+		SccProjectName2 = ../CPMS.Trust.Core/CPMS.Trust.Manager
+		SccLocalPath2 = ..\\CPMS.Trust.Core\\CPMS.Trust.Manager
+		SccProjectUniqueName3 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization\\CPMS.Authorization.csproj
+		SccProjectTopLevelParentUniqueName3 = CPMS.Trust.Service.sln
+		SccProjectName3 = ../../Common/Authorization/CPMS.Authorization/CPMS.Authorization
+		SccLocalPath3 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization
+		SccProjectUniqueName4 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain\\CPMS.Domain.csproj
+		SccProjectTopLevelParentUniqueName4 = CPMS.Trust.Service.sln
+		SccProjectName4 = ../../Common/CPMS.Domain/CPMS.Domain
+		SccLocalPath4 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain
+		SccProjectUniqueName5 = ..\\CPMS.Trust.Core\\CPMS.Trust.Presentation\\CPMS.Trust.Presentation.csproj
+		SccProjectTopLevelParentUniqueName5 = CPMS.Trust.Service.sln
+		SccProjectName5 = ../CPMS.Trust.Core/CPMS.Trust.Presentation
+		SccLocalPath5 = ..\\CPMS.Trust.Core\\CPMS.Trust.Presentation
+		SccProjectUniqueName6 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain.Tests\\CPMS.Domain.Tests.csproj
+		SccProjectTopLevelParentUniqueName6 = CPMS.Trust.Service.sln
+		SccProjectName6 = ../../Common/CPMS.Domain/CPMS.Domain.Tests
+		SccLocalPath6 = ..\\..\\Common\\CPMS.Domain\\CPMS.Domain.Tests
+		SccProjectUniqueName7 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization.WebAPI\\CPMS.Authorization.WebAPI.csproj
+		SccProjectTopLevelParentUniqueName7 = CPMS.Trust.Service.sln
+		SccProjectName7 = ../../Common/Authorization/CPMS.Authorization/CPMS.Authorization.WebAPI
+		SccLocalPath7 = ..\\..\\Common\\Authorization\\CPMS.Authorization\\CPMS.Authorization.WebAPI
+		SccProjectUniqueName8 = ..\\..\\Common\\Infrastructure\\CPMS.Infrastructure.WebApi\\CPMS.Infrastructure.WebApi.csproj
+		SccProjectTopLevelParentUniqueName8 = CPMS.Trust.Service.sln
+		SccProjectName8 = ../../Common/Infrastructure/CPMS.Infrastructure.WebApi
+		SccLocalPath8 = ..\\..\\Common\\Infrastructure\\CPMS.Infrastructure.WebApi
+		SccProjectUniqueName9 = CPMS.Trust.Delivery.Adapters\\CPMS.Trust.Delivery.Adapters.csproj
+		SccProjectTopLevelParentUniqueName9 = CPMS.Trust.Service.sln
+		SccProjectName9 = CPMS.Trust.Delivery.Adapters
+		SccLocalPath9 = CPMS.Trust.Delivery.Adapters
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125A3E3A-6870-4E4A-8259-9F80462B354A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125A3E3A-6870-4E4A-8259-9F80462B354A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125A3E3A-6870-4E4A-8259-9F80462B354A}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{125A3E3A-6870-4E4A-8259-9F80462B354A}.QA|Any CPU.Build.0 = QA|Any CPU
+		{125A3E3A-6870-4E4A-8259-9F80462B354A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125A3E3A-6870-4E4A-8259-9F80462B354A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C88468-75A2-473B-8F87-D558685BC102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C88468-75A2-473B-8F87-D558685BC102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C88468-75A2-473B-8F87-D558685BC102}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{42C88468-75A2-473B-8F87-D558685BC102}.QA|Any CPU.Build.0 = QA|Any CPU
+		{42C88468-75A2-473B-8F87-D558685BC102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C88468-75A2-473B-8F87-D558685BC102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.Build.0 = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.Build.0 = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5}.QA|Any CPU.Build.0 = QA|Any CPU
+		{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.Build.0 = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.QA|Any CPU.Build.0 = QA|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.QA|Any CPU.Build.0 = QA|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D030C42-3E51-4670-8B6F-D8006F43EE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D030C42-3E51-4670-8B6F-D8006F43EE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D030C42-3E51-4670-8B6F-D8006F43EE00}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{0D030C42-3E51-4670-8B6F-D8006F43EE00}.QA|Any CPU.Build.0 = QA|Any CPU
+		{0D030C42-3E51-4670-8B6F-D8006F43EE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D030C42-3E51-4670-8B6F-D8006F43EE00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{125A3E3A-6870-4E4A-8259-9F80462B354A} = {AA605476-B9BA-4674-8090-89DACA55CDA3}
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435} = {AA605476-B9BA-4674-8090-89DACA55CDA3}
+		{085C3D34-084D-4F48-A985-BABF30632355} = {AA605476-B9BA-4674-8090-89DACA55CDA3}
+		{0D030C42-3E51-4670-8B6F-D8006F43EE00} = {AA605476-B9BA-4674-8090-89DACA55CDA3}
+		{FA4F0FFA-E43C-44AB-947D-D9DA2D023C3D} = {7688A57C-EA43-4C30-9A5D-C5E2F42074E6}
+		{EF50580C-EEDD-4662-9E77-1DEABEDC3C80} = {7688A57C-EA43-4C30-9A5D-C5E2F42074E6}
+		{8CD085EA-DFF8-4465-8FDE-D9FCB89EF95C} = {7688A57C-EA43-4C30-9A5D-C5E2F42074E6}
+		{862CDF25-6361-408E-928C-008719B9EC27} = {7688A57C-EA43-4C30-9A5D-C5E2F42074E6}
+		{16D0F1CF-525C-49F4-8401-F5F4EBA95DF5} = {FA4F0FFA-E43C-44AB-947D-D9DA2D023C3D}
+		{42C88468-75A2-473B-8F87-D558685BC102} = {EF50580C-EEDD-4662-9E77-1DEABEDC3C80}
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428} = {EF50580C-EEDD-4662-9E77-1DEABEDC3C80}
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF} = {8CD085EA-DFF8-4465-8FDE-D9FCB89EF95C}
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013} = {862CDF25-6361-408E-928C-008719B9EC27}
+	EndGlobalSection
+EndGlobal

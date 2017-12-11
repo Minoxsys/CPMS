@@ -1,0 +1,108 @@
+﻿@using PAS.HelperExtensions
+@using PAS.Models
+@model AddCompletedEventViewModel
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/add-completed-event.js")
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Add New Event</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.Label("Event Code", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SelectedEventCode", new SelectList(Model.EventNames, "EventCode", "Description"), "Select Event")
+                @Html.ValidationMessage("SelectedEventCode", "Selecting an event code is required.")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Date, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Date, new { @id = "datepicker", @class = "inputDatePicker" })
+                @Html.ValidationMessageFor(model => model.Date)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Clinician", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SelectedClinician", new SelectList(Model.Clinicians, "Id", "Name"), "Select Clinician")
+                @Html.ValidationMessage("SelectedClinician", "Selecting a clinician is required.")
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.Label("Pathway", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SelectedPPINumber", new SelectList(Model.Pathways), "Select Pathway", new { @class="ddlPathway" })
+                @Html.ValidationMessage("SelectedPPINumber", "Selecting a pathway is required.")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Clock Type", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @(Html.DropDownListForEnum<ClockType>("SelectedClockType", "Select Clock"))
+                @Html.ValidationMessage("SelectedClockType", "Selecting a clock type is required.")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comments, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Comments, new { @class = "comments-textarea" })
+                @Html.ValidationMessageFor(model => model.Comments)
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.Label("Cancer", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBox("Cancer")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+<table id="completed-events" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Code</th>
+            <th>Date</th>
+            <th>Clinician</th>
+            <th>PPI Number</th>
+            <th>Comments</th>
+            <th>Is Cancer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var completedEvent in Model.AllCompletedEvents)
+            {
+            <tr>
+                <td>@completedEvent.Id</td>
+                <td>@completedEvent.Description</td>
+                <td>@completedEvent.Date</td>
+                <td>@completedEvent.Clinician</td>
+                <td>@completedEvent.PPINumber</td>
+                <td>@completedEvent.Comments</td>
+                <td>@completedEvent.Cancer</td>
+            </tr>
+            }
+    </tbody>
+</table>
+}
