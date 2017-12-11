@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateData", "GenerateData\GenerateData.csproj", "{9D5DAA4E-EE95-4E78-BE7A-E58EAA45349A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Domain", "..\..\Patient\CPMS.Patient.Core\CPMS.Patient.Domain\CPMS.Patient.Domain.csproj", "{029FCC94-02D3-48D7-AF63-BF50C1726EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Configuration", "..\..\Configuration\CPMS.Configuration\CPMS.Configuration.csproj", "{F6EDF3BD-5B5F-4F1C-B4C1-E1993D80090A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.22.4.249:8080/tfs/minoxsys
+		SccProjectUniqueName0 = ..\\..\\Patient\\CPMS.Patient.Core\\CPMS.Patient.Domain\\CPMS.Patient.Domain.csproj
+		SccProjectName0 = ../../Patient/CPMS.Patient.Core/CPMS.Patient.Domain
+		SccAuxPath0 = http://172.22.4.249:8080/tfs/minoxsys
+		SccLocalPath0 = ..\\..\\Patient\\CPMS.Patient.Core\\CPMS.Patient.Domain
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ..\\..\\Configuration\\CPMS.Configuration\\CPMS.Configuration.csproj
+		SccProjectName1 = ../../Configuration/CPMS.Configuration
+		SccAuxPath1 = http://172.22.4.249:8080/tfs/minoxsys
+		SccLocalPath1 = ..\\..\\Configuration\\CPMS.Configuration
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D5DAA4E-EE95-4E78-BE7A-E58EAA45349A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D5DAA4E-EE95-4E78-BE7A-E58EAA45349A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D5DAA4E-EE95-4E78-BE7A-E58EAA45349A}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5DAA4E-EE95-4E78-BE7A-E58EAA45349A}.QA|Any CPU.Build.0 = Release|Any CPU
+		{9D5DAA4E-EE95-4E78-BE7A-E58EAA45349A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5DAA4E-EE95-4E78-BE7A-E58EAA45349A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.Build.0 = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6EDF3BD-5B5F-4F1C-B4C1-E1993D80090A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EDF3BD-5B5F-4F1C-B4C1-E1993D80090A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EDF3BD-5B5F-4F1C-B4C1-E1993D80090A}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{F6EDF3BD-5B5F-4F1C-B4C1-E1993D80090A}.QA|Any CPU.Build.0 = QA|Any CPU
+		{F6EDF3BD-5B5F-4F1C-B4C1-E1993D80090A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6EDF3BD-5B5F-4F1C-B4C1-E1993D80090A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

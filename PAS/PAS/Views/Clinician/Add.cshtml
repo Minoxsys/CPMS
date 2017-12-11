@@ -1,0 +1,72 @@
+﻿@model PAS.Models.AddClinicianViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/add-clinician.js")
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Add New Clinician</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.Label("Name", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Hospital", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SelectedHospital", new SelectList(Model.Hospitals, "Id", "Name"), "Select Hospital")
+                @Html.ValidationMessage("SelectedHospital", "Selecting a hospital is required.")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Specialty", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SelectedSpecialty", new SelectList(Model.Specialties, "Code", "DisplayName"), "Select Specialty")
+                @Html.ValidationMessage("SelectedSpecialty", "Selecting a specialty is required.")
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<table id="clinician-table" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Hospital</th>
+            <th>Specialty</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pathway in Model.AllClinicians)
+        {
+            <tr>
+                <td>@pathway.Name</td>
+                <td>@pathway.Hospital</td>
+                <td>@pathway.Specialty</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.Hidden("GetSpecialtiesUrl", Url.Action("GetSpecialtiesBy"))

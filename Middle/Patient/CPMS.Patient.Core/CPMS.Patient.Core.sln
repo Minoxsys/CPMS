@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Manager", "CPMS.Patient.Manager\CPMS.Patient.Manager.csproj", "{D5918E13-9DCC-4C90-BF63-B9389CBEA562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Presentation", "CPMS.Patient.Presentation\CPMS.Patient.Presentation.csproj", "{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Manager.Tests", "CPMS.Patient.Manager.Tests\CPMS.Patient.Manager.Tests.csproj", "{617B6A32-4839-4601-A83F-E7DB31762C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Presentation.Tests", "CPMS.Patient.Presentation.Tests\CPMS.Patient.Presentation.Tests.csproj", "{25577321-FB88-4DC5-AEDE-430174498C8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{1FA7D9B5-E490-42F2-A9B0-1032FB1CEA10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{45CC106B-C302-4504-98B8-8D5472E8D196}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{846EF323-1558-4731-8731-1A504747C07F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7E7F5526-8940-40E4-87A9-61BCF306B5F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Domain", "CPMS.Patient.Domain\CPMS.Patient.Domain.csproj", "{029FCC94-02D3-48D7-AF63-BF50C1726EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Domain.Tests", "CPMS.Patient.Domain.Tests\CPMS.Patient.Domain.Tests.csproj", "{5BDCB7AD-8C9C-4710-885E-243D1D383013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization", "..\..\Authorization\CPMS.Authorization\CPMS.Authorization\CPMS.Authorization.csproj", "{49427DA9-6067-4CD9-B50F-45CDBA7DB428}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.22.4.249:8080/tfs/minoxsys
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CPMS.Patient.Manager\\CPMS.Patient.Manager.csproj
+		SccProjectTopLevelParentUniqueName1 = CPMS.Patient.Core.sln
+		SccProjectName1 = CPMS.Patient.Manager
+		SccLocalPath1 = CPMS.Patient.Manager
+		SccProjectUniqueName2 = CPMS.Patient.Presentation\\CPMS.Patient.Presentation.csproj
+		SccProjectTopLevelParentUniqueName2 = CPMS.Patient.Core.sln
+		SccProjectName2 = CPMS.Patient.Presentation
+		SccLocalPath2 = CPMS.Patient.Presentation
+		SccProjectUniqueName3 = CPMS.Patient.Manager.Tests\\CPMS.Patient.Manager.Tests.csproj
+		SccProjectTopLevelParentUniqueName3 = CPMS.Patient.Core.sln
+		SccProjectName3 = CPMS.Patient.Manager.Tests
+		SccLocalPath3 = CPMS.Patient.Manager.Tests
+		SccProjectUniqueName4 = CPMS.Patient.Presentation.Tests\\CPMS.Patient.Presentation.Tests.csproj
+		SccProjectTopLevelParentUniqueName4 = CPMS.Patient.Core.sln
+		SccProjectName4 = CPMS.Patient.Presentation.Tests
+		SccLocalPath4 = CPMS.Patient.Presentation.Tests
+		SccProjectUniqueName5 = CPMS.Patient.Domain\\CPMS.Patient.Domain.csproj
+		SccProjectTopLevelParentUniqueName5 = CPMS.Patient.Core.sln
+		SccProjectName5 = CPMS.Patient.Domain
+		SccLocalPath5 = CPMS.Patient.Domain
+		SccProjectUniqueName6 = CPMS.Patient.Domain.Tests\\CPMS.Patient.Domain.Tests.csproj
+		SccProjectTopLevelParentUniqueName6 = CPMS.Patient.Core.sln
+		SccProjectName6 = CPMS.Patient.Domain.Tests
+		SccLocalPath6 = CPMS.Patient.Domain.Tests
+		SccProjectUniqueName7 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization\\CPMS.Authorization.csproj
+		SccProjectTopLevelParentUniqueName7 = CPMS.Patient.Core.sln
+		SccProjectName7 = ../../Authorization/CPMS.Authorization/CPMS.Authorization
+		SccLocalPath7 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5918E13-9DCC-4C90-BF63-B9389CBEA562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5918E13-9DCC-4C90-BF63-B9389CBEA562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5918E13-9DCC-4C90-BF63-B9389CBEA562}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{D5918E13-9DCC-4C90-BF63-B9389CBEA562}.QA|Any CPU.Build.0 = QA|Any CPU
+		{D5918E13-9DCC-4C90-BF63-B9389CBEA562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5918E13-9DCC-4C90-BF63-B9389CBEA562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B}.QA|Any CPU.Build.0 = QA|Any CPU
+		{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617B6A32-4839-4601-A83F-E7DB31762C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617B6A32-4839-4601-A83F-E7DB31762C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617B6A32-4839-4601-A83F-E7DB31762C68}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{617B6A32-4839-4601-A83F-E7DB31762C68}.QA|Any CPU.Build.0 = QA|Any CPU
+		{617B6A32-4839-4601-A83F-E7DB31762C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617B6A32-4839-4601-A83F-E7DB31762C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25577321-FB88-4DC5-AEDE-430174498C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25577321-FB88-4DC5-AEDE-430174498C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25577321-FB88-4DC5-AEDE-430174498C8F}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{25577321-FB88-4DC5-AEDE-430174498C8F}.QA|Any CPU.Build.0 = QA|Any CPU
+		{25577321-FB88-4DC5-AEDE-430174498C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25577321-FB88-4DC5-AEDE-430174498C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.Build.0 = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.Build.0 = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.Build.0 = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5918E13-9DCC-4C90-BF63-B9389CBEA562} = {45CC106B-C302-4504-98B8-8D5472E8D196}
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428} = {45CC106B-C302-4504-98B8-8D5472E8D196}
+		{A9AD9CF3-5A94-4356-B511-5B8C88BC5A4B} = {1FA7D9B5-E490-42F2-A9B0-1032FB1CEA10}
+		{25577321-FB88-4DC5-AEDE-430174498C8F} = {7E7F5526-8940-40E4-87A9-61BCF306B5F2}
+		{617B6A32-4839-4601-A83F-E7DB31762C68} = {7E7F5526-8940-40E4-87A9-61BCF306B5F2}
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013} = {7E7F5526-8940-40E4-87A9-61BCF306B5F2}
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF} = {846EF323-1558-4731-8731-1A504747C07F}
+	EndGlobalSection
+EndGlobal
