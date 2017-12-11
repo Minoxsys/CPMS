@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Manage Users";
+}
+
+<h2>Manage Users</h2>
+
+@section scripts
+{
+    @Scripts.Render("~/Scripts/manageUsers.js")
+    <style>
+        div.filtering {
+            border: 1px solid #999;
+            margin-bottom: 5px;
+            padding: 10px;
+            background-color: #EEE;
+            width: 1200px;
+        }
+    </style>
+}
+
+
+    <div class="filtering">
+        <form>
+            Full Name: <input type="text" name="fullname" id="fullname" />
+            Username: <input type="text" name="username" id="username" />
+            <button type="submit" id="LoadRecordsButton">Load records</button>
+        </form>
+    </div>    
+
+
+    <div id="ManageUsersTable" style="width: 1200px; margin: auto;"></div>
+
+    @Html.Hidden("ListUsersUrl", Url.Action("UserList"))
+
+    @Html.Hidden("UpdateUserUrl", Url.Action("UpdateUser"))
+
+    @Html.Hidden("AddUserUrl", Url.Action("AddUser"))
+
+    @Html.Hidden("GetRolesUrl", Url.Action("GetRoles"))

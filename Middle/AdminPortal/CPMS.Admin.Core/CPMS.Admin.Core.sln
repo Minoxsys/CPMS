@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{0188A5DB-7DE0-4C8B-88A8-23357EABCDC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{6F406EA7-01B2-4290-9F86-BDB803322795}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{381F384C-47AF-44B8-9E52-BBC280C546F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Admin.Presentation", "CPMS.Admin.Presentation\CPMS.Admin.Presentation.csproj", "{8DF5CDF9-0586-4C8E-A741-6977C35E6250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Admin.Application", "CPMS.Admin.Application\CPMS.Admin.Application.csproj", "{CD8DE916-896F-40FA-B5AE-E28BD00FD12B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization", "..\..\Authorization\CPMS.Authorization\CPMS.Authorization\CPMS.Authorization.csproj", "{49427DA9-6067-4CD9-B50F-45CDBA7DB428}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.22.4.249:8080/tfs/minoxsys
+		SccProjectUniqueName0 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization\\CPMS.Authorization.csproj
+		SccProjectTopLevelParentUniqueName0 = CPMS.Admin.Core.sln
+		SccProjectName0 = ../../Authorization/CPMS.Authorization/CPMS.Authorization
+		SccLocalPath0 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization
+		SccProjectUniqueName1 = CPMS.Admin.Application\\CPMS.Admin.Application.csproj
+		SccProjectTopLevelParentUniqueName1 = CPMS.Admin.Core.sln
+		SccProjectName1 = CPMS.Admin.Application
+		SccLocalPath1 = CPMS.Admin.Application
+		SccProjectUniqueName2 = CPMS.Admin.Presentation\\CPMS.Admin.Presentation.csproj
+		SccProjectTopLevelParentUniqueName2 = CPMS.Admin.Core.sln
+		SccProjectName2 = CPMS.Admin.Presentation
+		SccLocalPath2 = CPMS.Admin.Presentation
+		SccLocalPath3 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DF5CDF9-0586-4C8E-A741-6977C35E6250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF5CDF9-0586-4C8E-A741-6977C35E6250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF5CDF9-0586-4C8E-A741-6977C35E6250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF5CDF9-0586-4C8E-A741-6977C35E6250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8DE916-896F-40FA-B5AE-E28BD00FD12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8DE916-896F-40FA-B5AE-E28BD00FD12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8DE916-896F-40FA-B5AE-E28BD00FD12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8DE916-896F-40FA-B5AE-E28BD00FD12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DF5CDF9-0586-4C8E-A741-6977C35E6250} = {381F384C-47AF-44B8-9E52-BBC280C546F8}
+		{CD8DE916-896F-40FA-B5AE-E28BD00FD12B} = {0188A5DB-7DE0-4C8B-88A8-23357EABCDC7}
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428} = {6F406EA7-01B2-4290-9F86-BDB803322795}
+	EndGlobalSection
+EndGlobal

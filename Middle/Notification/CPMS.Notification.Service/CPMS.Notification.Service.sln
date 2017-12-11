@@ -1,0 +1,197 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{9BACE74D-DC36-4A3B-8B9D-014D79C0FF95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{62F8BA3C-1937-4FF0-B485-915F968C9D6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2DD9DF96-039A-433D-937F-99C57B31027A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CBFADBF2-1E1D-4F0E-98E0-193247D7C1D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{3BE9E1C2-A69D-4DE8-B337-3A5332D2FC28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8F07EA27-2F2A-4AC2-9D20-14D5E5A7CCEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Notification.Manager", "..\CPMS.Notification.Core\CPMS.Notification.Manager\CPMS.Notification.Manager.csproj", "{594C910B-4771-4D97-ADF9-066840BF496E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Domain", "..\..\Patient\CPMS.Patient.Core\CPMS.Patient.Domain\CPMS.Patient.Domain.csproj", "{029FCC94-02D3-48D7-AF63-BF50C1726EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Notification.Presentation", "..\CPMS.Notification.Core\CPMS.Notification.Presentation\CPMS.Notification.Presentation.csproj", "{3C0D9E18-5B71-4BEA-B66B-316BC4E86132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Notification.Manager.Tests", "..\CPMS.Notification.Core\CPMS.Notification.Manager.Tests\CPMS.Notification.Manager.Tests.csproj", "{4205A574-4F50-452E-8967-E62D62388320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Notification.Presentation.Tests", "..\CPMS.Notification.Core\CPMS.Notification.Presentation.Tests\CPMS.Notification.Presentation.Tests.csproj", "{4EDA6653-7A6A-45E7-A0B9-93B082F57459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Patient.Domain.Tests", "..\..\Patient\CPMS.Patient.Core\CPMS.Patient.Domain.Tests\CPMS.Patient.Domain.Tests.csproj", "{5BDCB7AD-8C9C-4710-885E-243D1D383013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Infrastructure.DI", "..\..\Infrastructure\CPMS.Infrastructure.DI\CPMS.Infrastructure.DI.csproj", "{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Infrastructure.WebApi", "..\..\Infrastructure\CPMS.Infrastructure.WebApi\CPMS.Infrastructure.WebApi.csproj", "{085C3D34-084D-4F48-A985-BABF30632355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Notification.Core.Adapters", "CPMS.Notification.Core.Adapters\CPMS.Notification.Core.Adapters.csproj", "{6385463B-AD84-496E-951C-6558E2361373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Notification.Delivery.Adapters", "CPMS.Notification.Delivery.Adapters\CPMS.Notification.Delivery.Adapters.csproj", "{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization", "..\..\Authorization\CPMS.Authorization\CPMS.Authorization\CPMS.Authorization.csproj", "{49427DA9-6067-4CD9-B50F-45CDBA7DB428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPMS.Authorization.WebAPI", "..\..\Authorization\CPMS.Authorization\CPMS.Authorization.WebAPI\CPMS.Authorization.WebAPI.csproj", "{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://172.22.4.249:8080/tfs/minoxsys
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\CPMS.Notification.Core\\CPMS.Notification.Manager\\CPMS.Notification.Manager.csproj
+		SccProjectTopLevelParentUniqueName1 = CPMS.Notification.Service.sln
+		SccProjectName1 = ../CPMS.Notification.Core/CPMS.Notification.Manager
+		SccLocalPath1 = ..\\CPMS.Notification.Core\\CPMS.Notification.Manager
+		SccProjectUniqueName2 = ..\\..\\Patient\\CPMS.Patient.Core\\CPMS.Patient.Domain\\CPMS.Patient.Domain.csproj
+		SccProjectTopLevelParentUniqueName2 = CPMS.Notification.Service.sln
+		SccProjectName2 = ../../Patient/CPMS.Patient.Core/CPMS.Patient.Domain
+		SccLocalPath2 = ..\\..\\Patient\\CPMS.Patient.Core\\CPMS.Patient.Domain
+		SccProjectUniqueName3 = ..\\CPMS.Notification.Core\\CPMS.Notification.Presentation\\CPMS.Notification.Presentation.csproj
+		SccProjectTopLevelParentUniqueName3 = CPMS.Notification.Service.sln
+		SccProjectName3 = ../CPMS.Notification.Core/CPMS.Notification.Presentation
+		SccLocalPath3 = ..\\CPMS.Notification.Core\\CPMS.Notification.Presentation
+		SccProjectUniqueName4 = ..\\CPMS.Notification.Core\\CPMS.Notification.Manager.Tests\\CPMS.Notification.Manager.Tests.csproj
+		SccProjectTopLevelParentUniqueName4 = CPMS.Notification.Service.sln
+		SccProjectName4 = ../CPMS.Notification.Core/CPMS.Notification.Manager.Tests
+		SccLocalPath4 = ..\\CPMS.Notification.Core\\CPMS.Notification.Manager.Tests
+		SccProjectUniqueName5 = ..\\CPMS.Notification.Core\\CPMS.Notification.Presentation.Tests\\CPMS.Notification.Presentation.Tests.csproj
+		SccProjectTopLevelParentUniqueName5 = CPMS.Notification.Service.sln
+		SccProjectName5 = ../CPMS.Notification.Core/CPMS.Notification.Presentation.Tests
+		SccLocalPath5 = ..\\CPMS.Notification.Core\\CPMS.Notification.Presentation.Tests
+		SccProjectUniqueName6 = ..\\..\\Patient\\CPMS.Patient.Core\\CPMS.Patient.Domain.Tests\\CPMS.Patient.Domain.Tests.csproj
+		SccProjectTopLevelParentUniqueName6 = CPMS.Notification.Service.sln
+		SccProjectName6 = ../../Patient/CPMS.Patient.Core/CPMS.Patient.Domain.Tests
+		SccLocalPath6 = ..\\..\\Patient\\CPMS.Patient.Core\\CPMS.Patient.Domain.Tests
+		SccProjectUniqueName7 = ..\\..\\Infrastructure\\CPMS.Infrastructure.DI\\CPMS.Infrastructure.DI.csproj
+		SccProjectTopLevelParentUniqueName7 = CPMS.Notification.Service.sln
+		SccProjectName7 = ../../Infrastructure/CPMS.Infrastructure.DI
+		SccLocalPath7 = ..\\..\\Infrastructure\\CPMS.Infrastructure.DI
+		SccProjectUniqueName8 = ..\\..\\Infrastructure\\CPMS.Infrastructure.WebApi\\CPMS.Infrastructure.WebApi.csproj
+		SccProjectTopLevelParentUniqueName8 = CPMS.Notification.Service.sln
+		SccProjectName8 = ../../Infrastructure/CPMS.Infrastructure.WebApi
+		SccLocalPath8 = ..\\..\\Infrastructure\\CPMS.Infrastructure.WebApi
+		SccProjectUniqueName9 = CPMS.Notification.Core.Adapters\\CPMS.Notification.Core.Adapters.csproj
+		SccProjectTopLevelParentUniqueName9 = CPMS.Notification.Service.sln
+		SccProjectName9 = CPMS.Notification.Core.Adapters
+		SccLocalPath9 = CPMS.Notification.Core.Adapters
+		SccProjectUniqueName10 = CPMS.Notification.Delivery.Adapters\\CPMS.Notification.Delivery.Adapters.csproj
+		SccProjectTopLevelParentUniqueName10 = CPMS.Notification.Service.sln
+		SccProjectName10 = CPMS.Notification.Delivery.Adapters
+		SccLocalPath10 = CPMS.Notification.Delivery.Adapters
+		SccProjectUniqueName11 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization\\CPMS.Authorization.csproj
+		SccProjectTopLevelParentUniqueName11 = CPMS.Notification.Service.sln
+		SccProjectName11 = ../../Authorization/CPMS.Authorization/CPMS.Authorization
+		SccLocalPath11 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization
+		SccProjectUniqueName12 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization.WebAPI\\CPMS.Authorization.WebAPI.csproj
+		SccProjectTopLevelParentUniqueName12 = CPMS.Notification.Service.sln
+		SccProjectName12 = ../../Authorization/CPMS.Authorization/CPMS.Authorization.WebAPI
+		SccLocalPath12 = ..\\..\\Authorization\\CPMS.Authorization\\CPMS.Authorization.WebAPI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{594C910B-4771-4D97-ADF9-066840BF496E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594C910B-4771-4D97-ADF9-066840BF496E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594C910B-4771-4D97-ADF9-066840BF496E}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{594C910B-4771-4D97-ADF9-066840BF496E}.QA|Any CPU.Build.0 = QA|Any CPU
+		{594C910B-4771-4D97-ADF9-066840BF496E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594C910B-4771-4D97-ADF9-066840BF496E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.QA|Any CPU.Build.0 = QA|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0D9E18-5B71-4BEA-B66B-316BC4E86132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0D9E18-5B71-4BEA-B66B-316BC4E86132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0D9E18-5B71-4BEA-B66B-316BC4E86132}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{3C0D9E18-5B71-4BEA-B66B-316BC4E86132}.QA|Any CPU.Build.0 = QA|Any CPU
+		{3C0D9E18-5B71-4BEA-B66B-316BC4E86132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0D9E18-5B71-4BEA-B66B-316BC4E86132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4205A574-4F50-452E-8967-E62D62388320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4205A574-4F50-452E-8967-E62D62388320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4205A574-4F50-452E-8967-E62D62388320}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{4205A574-4F50-452E-8967-E62D62388320}.QA|Any CPU.Build.0 = QA|Any CPU
+		{4205A574-4F50-452E-8967-E62D62388320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4205A574-4F50-452E-8967-E62D62388320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EDA6653-7A6A-45E7-A0B9-93B082F57459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDA6653-7A6A-45E7-A0B9-93B082F57459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDA6653-7A6A-45E7-A0B9-93B082F57459}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{4EDA6653-7A6A-45E7-A0B9-93B082F57459}.QA|Any CPU.Build.0 = QA|Any CPU
+		{4EDA6653-7A6A-45E7-A0B9-93B082F57459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDA6653-7A6A-45E7-A0B9-93B082F57459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.QA|Any CPU.Build.0 = QA|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0}.QA|Any CPU.Build.0 = QA|Any CPU
+		{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.QA|Any CPU.Build.0 = QA|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085C3D34-084D-4F48-A985-BABF30632355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6385463B-AD84-496E-951C-6558E2361373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6385463B-AD84-496E-951C-6558E2361373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6385463B-AD84-496E-951C-6558E2361373}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{6385463B-AD84-496E-951C-6558E2361373}.QA|Any CPU.Build.0 = QA|Any CPU
+		{6385463B-AD84-496E-951C-6558E2361373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6385463B-AD84-496E-951C-6558E2361373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA}.QA|Any CPU.Build.0 = QA|Any CPU
+		{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.QA|Any CPU.Build.0 = QA|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.QA|Any CPU.Build.0 = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80EAA5CA-4951-400A-A6CA-A65FFD60DCA0} = {9BACE74D-DC36-4A3B-8B9D-014D79C0FF95}
+		{085C3D34-084D-4F48-A985-BABF30632355} = {9BACE74D-DC36-4A3B-8B9D-014D79C0FF95}
+		{6385463B-AD84-496E-951C-6558E2361373} = {9BACE74D-DC36-4A3B-8B9D-014D79C0FF95}
+		{7129DE19-6FB5-4B28-9DBB-DCE8CF4FD2FA} = {9BACE74D-DC36-4A3B-8B9D-014D79C0FF95}
+		{48201BCE-0FD7-4AE5-BF3A-DC64D5813435} = {9BACE74D-DC36-4A3B-8B9D-014D79C0FF95}
+		{2DD9DF96-039A-433D-937F-99C57B31027A} = {62F8BA3C-1937-4FF0-B485-915F968C9D6F}
+		{CBFADBF2-1E1D-4F0E-98E0-193247D7C1D1} = {62F8BA3C-1937-4FF0-B485-915F968C9D6F}
+		{3BE9E1C2-A69D-4DE8-B337-3A5332D2FC28} = {62F8BA3C-1937-4FF0-B485-915F968C9D6F}
+		{8F07EA27-2F2A-4AC2-9D20-14D5E5A7CCEF} = {62F8BA3C-1937-4FF0-B485-915F968C9D6F}
+		{3C0D9E18-5B71-4BEA-B66B-316BC4E86132} = {2DD9DF96-039A-433D-937F-99C57B31027A}
+		{594C910B-4771-4D97-ADF9-066840BF496E} = {CBFADBF2-1E1D-4F0E-98E0-193247D7C1D1}
+		{49427DA9-6067-4CD9-B50F-45CDBA7DB428} = {CBFADBF2-1E1D-4F0E-98E0-193247D7C1D1}
+		{029FCC94-02D3-48D7-AF63-BF50C1726EDF} = {3BE9E1C2-A69D-4DE8-B337-3A5332D2FC28}
+		{4205A574-4F50-452E-8967-E62D62388320} = {8F07EA27-2F2A-4AC2-9D20-14D5E5A7CCEF}
+		{4EDA6653-7A6A-45E7-A0B9-93B082F57459} = {8F07EA27-2F2A-4AC2-9D20-14D5E5A7CCEF}
+		{5BDCB7AD-8C9C-4710-885E-243D1D383013} = {8F07EA27-2F2A-4AC2-9D20-14D5E5A7CCEF}
+	EndGlobalSection
+EndGlobal
